@@ -1,4 +1,4 @@
-# User Management Dashboard
+ # User Management Dashboard
 
 A professional, production-ready user management dashboard built with React, Vite, and modern web technologies. Features real-time search, sorting, CRUD operations, and a fully responsive design.
 
@@ -156,7 +156,7 @@ The production build is optimized with:
 
 ### Docker
 
-```dockerfile
+dockerfile
 FROM node:18-alpine as build
 WORKDIR /app
 COPY package*.json ./
@@ -167,7 +167,7 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
-```
+
 
 ##  Troubleshooting
 
